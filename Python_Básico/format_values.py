@@ -20,9 +20,13 @@ print(f'{num_2:0<10}')
 num_3 = 128
 print(f'{num_3:0^10}')
 
-nome = 'Marcelo'
+nome = 'Marcelo Santos'
 print(f'{nome:#^50}')
 
-nome_2 = 'Marcelo Santos'
-nome_formatado = '{n:@^20}'.format(n=nome_2)
+print(nome.lower())  # tudo minusculas
+print(nome.upper())  # tudo maiusculas
+print(nome.title())  # primeiras maiusculas
+
+
+nome_formatado = '{n:@^20}'.format(n=nome)
 print(nome_formatado)
